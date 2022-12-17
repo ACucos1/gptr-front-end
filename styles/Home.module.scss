@@ -1,0 +1,73 @@
+.Navbar {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  height: 100px;
+  color: black;
+  padding-inline: 1rem;
+
+  .LogoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    img {
+      font-size: 16px;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      background-color: black;
+    }
+
+    & * {
+      margin-inline: 1rem;
+    }
+  }
+}
+
+.Main {
+  padding-block: 2rem;
+  height: max(800px, 100vh);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .FormWrapper {
+    width: 100%;
+    height: 50%;
+    .Form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: max(500px, 50%);
+      width: max(300px, 100%);
+
+      textarea {
+        resize: none;
+        height: 80%;
+        width: 80%;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type="submit"] {
+        margin: 1rem;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .OutputWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Output {
+      max-width: 1200px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
